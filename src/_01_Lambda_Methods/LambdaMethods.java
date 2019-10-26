@@ -31,15 +31,18 @@ public class LambdaMethods {
 				
 				String final_s ="";
 		char c_s = 'q';
-		for(int i = s.length()-1;i>-1;i--) {
-		c_s =(char) (s.charAt(i)+26);
-	
-	= (c_s+"").toUpperCase();
-	
-		opposites = opposites+backwardss;
+		for(int i =0 ;i<s.length();i--) {
+			c_s =(char) (s.charAt(i)+26);
+			if(i%2==0) {
+				
+				final_s =final_s+c_s;
+				
+			}
+		
+		
 		
 	}
-	System.out.println(opposites);
+	System.out.println(final_s);
 	
 	
 	}, "repeat");
